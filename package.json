@@ -2,7 +2,7 @@
   "name": "viki",
   "version": "1.0.0",
   "description": "",
-  "main": "exercise.js",
+  "main": "solution.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
