@@ -17,22 +17,22 @@ var more = true;
 
 while (more) {
 		
-		//restart counter each loop
-		var hd_true = 0;
-		var hd_false = 0;
-		pageNum++;
+	//restart counter each loop
+	var hd_true = 0;
+	var hd_false = 0;
+	pageNum++;
 
-		//GET request for page
-		var jsonObj = JSON.parse(Get(url + pageNum));
-		var response = jsonObj.response;
+	//GET request for page
+	var jsonObj = JSON.parse(Get(url + pageNum));
+	var response = jsonObj.response;
 		
-		//loop through jsonObj.response and count HD
-		for (var i in response) {
-			var hd = response[i]["flags"].hd;
-			if (hd) {
-				hd_true++;
-			} else {
-				hd_false++;
+	//loop through jsonObj.response and count HD
+	for (var i in response) {
+		var hd = response[i]["flags"].hd;
+		if (hd) {
+			hd_true++;
+		} else {
+			hd_false++;
 	}
 }	
 	//add current page HD's to total
