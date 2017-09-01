@@ -40,7 +40,7 @@ while (more) {
 	hdFalseTotal += hd_false;
 
 	//keep track of number of pages processed
-	console.log(pageNum)
+	console.log("For page number " + pageNum + " HD is true = " + hd_true + " HD is false = " + hd_false);
 
 	//exit loop when more becomes false
 	if (jsonObj.more === false) {
